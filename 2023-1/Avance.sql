@@ -35,50 +35,76 @@ Lidera()
 
 CREATE TABLE personaje (idPersonaje integer PRIMARY KEY, nombre text, fraseCelebre text, sexo text, colorCabello text, colorOjos text, estadoCivil text, ocupacion text, nacionalidad text, creador text)
 
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (1, 'Groot', 'Yo soy Groot', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Flora colossus', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (2, 'Peter Quill', 'Yo soy Groot', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Estadounidense', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (3, 'Anthony Edward Stark', 'Yo soy Groot', 'Femenino', 'marron', 'marron', 'soltero', 'integrante', 'Horrible mujer', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (4, 'Bruce Banner', 'Mi secreto es que siempre estoy furioso', 'Masculino', 'verde', 'verde', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (5, 'Thor', 'Sigo siendo digno', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (6, 'Peter Parker', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Humano', 'Stan Lee');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (7, 'Johann Schmidt', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (8, 'Jackson Rollins', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (9, 'Alveus', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (10, 'Maybelle Reilly', 'Un gran poder conlleva una gran responsabilidad', 'Femenino', 'marron', 'marron', 'casada', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (11, 'Pepper Potts', 'Un gran poder conlleva una gran responsabilidad', 'Femenino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (12, 'Alphonso Mackenzie', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
-Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) VALUES (13, 'Howard Anthony Walter Stark', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (1, 'Groot', 'Yo soy Groot', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Flora colossus', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (2, 'Peter Quill', 'Yo soy Star Lord', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Estadounidense', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (3, 'Anthony Edward Stark', 'Yo soy Iron Man', 'Femenino', 'marron', 'marron', 'soltero', 'integrante', 'Horrible mujer', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (4, 'Bruce Banner', 'Mi secreto es que siempre estoy furioso', 'Masculino', 'verde', 'verde', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (5, 'Thor', 'Sigo siendo digno', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (6, 'Peter Parker', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Humano', 'Stan Lee');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (7, 'Johann Schmidt', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (8, 'Jackson Rollins', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (9, 'Alveus', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (10, 'Maybelle Reilly', 'Un gran poder conlleva una gran responsabilidad', 'Femenino', 'marron', 'marron', 'casada', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (11, 'Pepper Potts', 'Un gran poder conlleva una gran responsabilidad', 'Femenino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (12, 'Alphonso Mackenzie', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
+Insert into personaje(idPersonaje, nombre, fraseCelebre, sexo, colorCabello, colorOjos, estadoCivil, ocupacion, nacionalidad, creador) 
+    VALUES (13, 'Howard Anthony Walter Stark', 'Un gran poder conlleva una gran responsabilidad', 'Masculino', 'marron', 'marron', 'soltero', 'integrante', 'Kylosiano', 'Dan Abnett');
 
 
 /* Tabla de Heroe */
 
 CREATE TABLE heroe (idPersonaje integer FOREIGN KEY, nombreSuper text, logo text, trajeColor text)
 
-Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) VALUES (1, 'Groot', 'su cara', 'marron');
-Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) VALUES (2, 'Star Lord', 'su casco', 'vinotinto');
-Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) VALUES (3, 'Iron Man', 'su casco', 'rojo');
-Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) VALUES (4, 'Hulk', 'un punno', 'verde');
-Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) VALUES (5, 'Thor', 'un martillo', 'gris');
-Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) VALUES (6, 'Spider Man', 'una arannia', 'rojo');
+Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) 
+    VALUES (1, 'Groot', 'su cara', 'marron');
+Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) 
+    VALUES (2, 'Star Lord', 'su casco', 'vinotinto');
+Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) 
+    VALUES (3, 'Iron Man', 'su casco', 'rojo');
+Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) 
+    VALUES (4, 'Hulk', 'un punno', 'verde');
+Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) 
+    VALUES (5, 'Thor', 'un martillo', 'gris');
+Insert into heroe(idPersonaje, nombreSuper, logo, trajeColor) 
+    VALUES (6, 'Spider Man', 'una arannia', 'rojo');
 
 
 /* Tabla de Civil */
 
 CREATE TABLE civil (idPersonaje integer FOREIGN KEY)
 
-Insert into heroe(idPersonaje) VALUES (10);
-Insert into heroe(idPersonaje) VALUES (11);
-Insert into heroe(idPersonaje) VALUES (12);
-Insert into heroe(idPersonaje) VALUES (13);
+Insert into heroe(idPersonaje) 
+    VALUES (10);
+Insert into heroe(idPersonaje) 
+    VALUES (11);
+Insert into heroe(idPersonaje) 
+    VALUES (12);
+Insert into heroe(idPersonaje) 
+    VALUES (13);
 
 
 /* Tabla de Villano */
 
 CREATE TABLE villano (idPersonaje integer FOREIGN KEY, nombreVillano text, objetivo text)
 
-Insert into villano(idPersonaje, nombreVillano, objetivo) VALUES (7, 'hive', 'Destruir el mundo');
-Insert into villano(idPersonaje, nombreVillano, objetivo) VALUES (8, 'hive', 'Destruir el mundo');
-Insert into villano(idPersonaje, nombreVillano, objetivo) VALUES (9, 'hive', 'Destruir el mundo');
+Insert into villano(idPersonaje, nombreVillano, objetivo) 
+    VALUES (7, 'hive', 'Destruir el mundo');
+Insert into villano(idPersonaje, nombreVillano, objetivo) 
+    VALUES (8, 'hive', 'Destruir el mundo');
+Insert into villano(idPersonaje, nombreVillano, objetivo) 
+    VALUES (9, 'hive', 'Destruir el mundo');
 
 
 /* Tabla de Medio */

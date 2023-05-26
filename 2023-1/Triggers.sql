@@ -73,15 +73,3 @@ CREATE TRIGGER pelicula_check
 BEFORE INSERT OR UPDATE ON "Proyecto Fase 2"."Pelicula"
 FOR EACH ROW EXECUTE FUNCTION "Proyecto Fase 2".pelicula_check();
 
-SELECT "Personaje"."NombreCompleto"
-FROM "Proyecto Fase 2"."Personaje"
-WHERE "Personaje"."NombreCompleto" IN (
-	SELECT "Posee"."Personaje"
-	FROM "Proyecto Fase 2"."Posee"
-	WHERE "Posee"."FormaObtencion" = 'Artificial') 
-AND "NombreCompleto" IN (
-	SELECT "Organizacion"."Nombre"
-	FROM "Proyecto Fase 2"."Organizacion"
-	WHERE "Organizacion"."Lider" IS NOT NULL)
-
-Series que han tenido más episodios que el promedio
