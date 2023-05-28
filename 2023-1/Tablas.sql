@@ -70,7 +70,6 @@ CREATE TABLE IF NOT EXISTS "Proyecto Fase 2"."Heroe"
 (
     "NombreCompleto" character varying COLLATE pg_catalog."default" NOT NULL,
     "NombreHeroe" character varying COLLATE pg_catalog."default",
-    "ColoresTraje" character varying COLLATE pg_catalog."default",
     "Logotipo" character varying COLLATE pg_catalog."default",
     "Rival" character varying COLLATE pg_catalog."default",
     CONSTRAINT "Heroe_pkey" PRIMARY KEY ("NombreCompleto"),
@@ -174,6 +173,26 @@ CREATE TABLE IF NOT EXISTS "Proyecto Fase 2"."VillanoEnemigos"
 TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS "Proyecto Fase 2"."VillanoEnemigos"
+    OWNER to postgres;
+
+-- Table: Proyecto Fase 2.ColoresTraje
+
+-- DROP TABLE IF EXISTS "Proyecto Fase 2"."ColoresTraje";
+
+CREATE TABLE IF NOT EXISTS "Proyecto Fase 2"."ColoresTraje"
+(
+    "Heroe" character varying COLLATE pg_catalog."default" NOT NULL,
+    "ColorTraje" character varying COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT "ColoresTraje_pkey" PRIMARY KEY ("Heroe", "ColorTraje"),
+    CONSTRAINT "ColoresTraje_Heroe_fkey" FOREIGN KEY ("Heroe")
+        REFERENCES "Proyecto Fase 2"."Heroe" ("NombreCompleto") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS "Proyecto Fase 2"."ColoresTraje"
     OWNER to postgres;
 
 -- Table: Proyecto Fase 2.Nacionalidad

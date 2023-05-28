@@ -46,6 +46,12 @@ INSERT INTO "Proyecto Fase 2"."VillanoEnemigos"
     "NombreCompleto"
 )
 
+INSERT INTO "Proyecto Fase 2"."ColoresTraje"
+(
+    "Heroe",
+    "ColorTraje"
+)
+
 INSERT INTO "Proyecto Fase 2"."Nacionalidad"
 (
     "Pais",
