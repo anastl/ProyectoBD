@@ -57,3 +57,15 @@ WHERE "Poder"."Nombre" IN (
     GROUP BY "Posee"."Poder"
     HAVING COUNT( "Posee"."Personaje" ) >= 2
 )
+
+-- Lista de los 5 poderes más usados en combates y cuantas veces se han usado
+SELECT "Poder", COUNT(*) AS "Count"
+FROM "Proyecto Fase 2"."ParticipaPod"
+GROUP BY "Poder"
+ORDER BY "Count" DESC
+LIMIT 5;
+
+-- Listar la nacionalidad de todos los lideres
+SELECT "Tiene".*
+FROM "Proyecto Fase 2"."Tiene" JOIN "Proyecto Fase 2"."Organizacion"
+ON "Tiene"."NombreCompleto" = "Organizacion"."Lider"
