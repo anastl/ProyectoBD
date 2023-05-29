@@ -40,7 +40,6 @@ INSERT INTO "Proyecto"."Personaje" (
     ('Korath el Perseguidor', '¿Quién eres tú para desafiarme?', 'M', 'No tiene', 'Azules', 'Soltero', '1988-07-26', FALSE),
     ('La Orden Negra', '¡Por mi padre, el gran Thanos!', 'Desc', 'Varía', 'Varía', 'Viudo', '1996-12-08', FALSE),
     ('Loki', '¡Yo soy Loki, de Asgard! ¡Y estoy aquí para liberarte!', 'M', 'Negro', 'Verde', 'Soltero', '2005-11-01', FALSE);
-
 INSERT INTO "Proyecto"."PersonajeOcupaciones" (
     "NombrePersonaje",
     "Ocupacion"
@@ -101,7 +100,6 @@ INSERT INTO "Proyecto"."PersonajeOcupaciones" (
     ('La Orden Negra', 'Aliados de Thanos'),
     ('La Orden Negra', 'guerreros'),
     ('Loki', 'Dios de la travesura y la mentira');
-
 INSERT INTO "Proyecto"."PersonajeCreadores" (
     "NombrePersonaje",
     "Creador"
@@ -170,8 +168,6 @@ INSERT INTO "Proyecto"."PersonajeCreadores" (
     ('Loki', 'Stan Lee'),
     ('Loki', 'Larry Lieber'),
     ('Loki', 'Jack Kirby');
-
-
 INSERT INTO "Proyecto"."Civil" (
     "NombreCompleto"
     )
@@ -181,7 +177,6 @@ INSERT INTO "Proyecto"."Civil" (
     ('Gwen Stacy'),
     ('Mary Jane Watson'),
     ('Jack Hammer');
-
 INSERT INTO "Proyecto"."Villano" (
     "NombreCompleto",
     "NombreVillano",
@@ -196,7 +191,6 @@ INSERT INTO "Proyecto"."Villano" (
     ('Francis Freeman', 'Ajax', 'Crear soldados mutantes indestructibles'),
     ('Christina', 'Angel Dust', 'Defender a su hermano mutante y luchar por la supremacía mutante'),
     ('Loki', 'Loki', 'Dominar Asgard y la Tierra');
-
 INSERT INTO "Proyecto"."Heroe" (
     "NombreCompleto",
     "NombreHeroe",
@@ -221,8 +215,6 @@ INSERT INTO "Proyecto"."Heroe" (
     ('Neena Thurman', 'Domino', 'img/domino.jpg', 'Loki'),
     ('Blind Al', 'Blind Al', 'img/blindal.jpg', 'Loki'),
     ('Vanessa Carlysle', 'Vanessa Carlysle', 'img/Vanessa.jpg', 'Loki');
-
-
 INSERT INTO "Proyecto"."VillanoEnemigos" (
     "Enemigo",
     "NombreCompleto"
@@ -237,7 +229,6 @@ INSERT INTO "Proyecto"."VillanoEnemigos" (
     ('Deadpool', 'Christina'),
     ('Thor', 'Loki'),
     ('Los Vengadores', 'Loki');
-
 INSERT INTO "Proyecto"."ColoresTraje" (
     "Heroe",
     "ColorTraje"
@@ -272,7 +263,6 @@ INSERT INTO "Proyecto"."ColoresTraje" (
     ('Neena Thurman', 'blanco'),
     ('Blind Al', 'Varía'),
     ('Vanessa Carlysle', 'azul');
-
 INSERT INTO "Proyecto"."Nacionalidad" (
     "Pais",
     "Nombre" 
@@ -284,7 +274,6 @@ INSERT INTO "Proyecto"."Nacionalidad" (
     ('Rusia', 'Ruso'),
     ('Italia', 'Italiano'),
     ('Nueva Zelanda', 'Neozelandés');
-
 INSERT INTO "Proyecto"."Organizacion" (
     "Nombre",
     "Slogan",
@@ -299,7 +288,6 @@ INSERT INTO "Proyecto"."Organizacion" (
     ('Guardianes de la Galaxia', 'Todos juntos somos más fuertes', 'Equipo de superhéroes', 'Proteger la galaxia de amenazas cósmicas y mantener la paz y la justicia en el universo.','Planeta Xandar', '1974-09-09', 'Peter Quill', 'Peter Quill'),
     ('Los Seis Siniestros', '¡Unidos contra Spider-Man!', 'Equipo de supervillanos', 'Destruir a Spider-Man y gobernar el mundo del crimen organizado.', 'Estados Unidos', '1973-02-18', 'Otto Octavius', 'Otto Octavius'),
     ('X-Force', '¡La fuerza para hacer lo correcto!', 'Equipo de héroes mercenarios', 'Realizar misiones peligrosas y secretas que otros héroes no pueden o no quieren hacer.', 'Estados Unidos', '1975-06-07', 'Nathan Christopher Summers', 'Nathan Christopher Summers');
-
 INSERT INTO "Proyecto"."Sede" (
     "Nombre",
     "Ubicacion",
@@ -310,7 +298,6 @@ INSERT INTO "Proyecto"."Sede" (
     ('Fortaleza de Knowhere', 'En la cabeza decapitada de un Celestial', 'Nave', 'Guardianes de la Galaxia'),
     ('La Torre Oscura', 'Nueva York', 'Torre', 'Los Seis Siniestros'),
     ('La Base del X-Force', 'Colorado', 'Apartamento', 'X-Force');
-
 INSERT INTO "Proyecto"."Poder" (
     "Nombre",
     "Descripcion"
@@ -330,7 +317,6 @@ INSERT INTO "Proyecto"."Poder" (
     ('Magia', 'capacidad de manipular la magia y la ilusión'),
     ('Cambio de apariencia', 'poder modificar su apariencia a su gusto'),
     ('Resistencia psíquica', 'abilidad de resistir los ataques telepáticos de otros personajes');
-
 INSERT INTO "Proyecto"."Objeto" (
     "Nombre",
     "MaterialFab",
@@ -353,7 +339,6 @@ INSERT INTO "Proyecto"."Objeto" (
     ('Casco', 'Plástico y metal', 'casco', 'Un casco personalizado que Peter Quill usa para protegerse durante sus misiones como Star-Lord.'),
     ('Arma de fuego', 'Acero inoxidable', 'arma', 'Un arma de fuego personalizada que Blind Al ha usado en misiones de mercenario y defensa personal.'),
     ('Bastón', 'Fibra de carbono','arma', 'Un bastón de combate personalizado que Natasha Romanoff usa en su estilo de lucha cuerpo a cuerpo.');
-
 INSERT INTO "Proyecto"."ObjetoCreadores" (
     "ObjetoNombre",
     "Creador"
@@ -374,7 +359,6 @@ INSERT INTO "Proyecto"."ObjetoCreadores" (
     ('Casco', 'Peter Quill'),
     ('Arma de fuego', 'Blind Al'),
     ('Bastón', 'Natasha Romanoff');
-
 INSERT INTO "Proyecto"."Combate" (
     "Fecha",
     "Lugar"
@@ -391,9 +375,7 @@ INSERT INTO "Proyecto"."Combate" (
 	('2023-06-01','Puente Bifrost'),
 	('2000-01-05','Knowhere'),
     ('2023-08-23', 'Ciudad de México'),
-    ('2023-06-01', 'Puente Bifrost'),
     ('2023-07-15','Knowhere');
-
 INSERT INTO "Proyecto"."Medio" (
     "Titulo",
     "CompaniaProd",
@@ -402,6 +384,7 @@ INSERT INTO "Proyecto"."Medio" (
     "Rating"
     )
     VALUES 
+    ('Doctor Strange in the Multiverse of Madness', 'Marvel Studios', 'Viaja a lo desconocido con el Doctor Strange, quien, con la ayuda de tanto antiguos como nuevos aliados místicos, recorre las complejas y peligrosas realidades alternativas del multiverso para enfrentarse a un nuevo y misterioso adversario.', '2021-11-18', 5),
     ('Spider-Man: The Animated Series', 'Marvel Productions', 'Peter Parker se convierte en Spider-Man y se enfrenta a los villanos más peligrosos de Nueva York.', '1994-11-19', 4),
     ('Deadpool 2', 'Marvel Television', 'Un mercenario desfigurado se convierte en el antihéroe Deadpool y lucha contra los villanos más peligrosos del mundo.', '2013-06-25', 4),
     ('Guardians of the Galaxy', 'Marvel Animation', 'Un grupo de inadaptados se unen para convertirse en los héroes más improbables de la galaxia y luchar contra las amenazas cósmicas.', '2015-09-05', 3),
@@ -416,7 +399,6 @@ INSERT INTO "Proyecto"."Medio" (
     ('Spider-Man: Into the Spider-Verse', 'Sony Pictures Animation', 'Miles Morales se convierte en el Spider-Man de su realidad y se une a sus contrapartes de otras dimensiones para detener una amenaza común.', '2018-12-14',  4),
     ('The Invincible Iron Man', 'Marvel Animation', 'Cuando un científico brillante descubre una tecnología peligrosa, es secuestrado por terroristas. Tony Stark debe usar su ingenio y su armadura de Iron Man para salvar al científico y detener una amenaza mayor.', '2007-01-23',  3),
     ('X-Force: The Movie', 'Marvel Studios', 'Cuando un grupo de mutantes se une para formar X-Force, deben luchar contra una amenaza que pone en peligro la existencia de la humanidad.', '2022-07-15',  3);
-
 INSERT INTO "Proyecto"."Pelicula" (
     "Titulo",
     "Director",
@@ -427,13 +409,13 @@ INSERT INTO "Proyecto"."Pelicula" (
     "Ganancias"
     )
     VALUES 
+    ('Doctor Strange in the Multiverse of Madness', 'Sam Raimi', 180, 'Sony Pictures', 'Animada', 256.13, 9000.78 ),
     ('Spiderman', 'Jon Watts', 130, 'Sony Pictures', 'Acción', 200.00, 5000.00),
     ('Deadpool 3', 'Tim Miller', 108, '20th Century Fox', 'Acción', 580.00, 7852.00),
     ('Guardianes de la Galaxia', 'James Gunn', 121, 'Walt Disney Studios', 'Ciencia ficción', 170.00, 7733.00),
     ('Spider-Man: Into the Spider-Verse', 'Bob Persichetti', 185, 'Sony Pictures Releasing', 'Animada', 456.00, 8998.00),
     ('The Invincible Iron Man', 'Patrick Archibald', 148, 'Lionsgate', 'Animada', 648.00, 5540.00),
     ('X-Force: The Movie', 'Drew Goddard', 120, 'Walt Disney Studios Motion Pictures', 'Acción', 710.00, 4000.00);
-
 INSERT INTO "Proyecto"."Serie" (
     "Titulo",
     "Creador",
@@ -447,7 +429,6 @@ INSERT INTO "Proyecto"."Serie" (
     ('Guardians of the Galaxy', 'Donald Glover', 'FX', 'Acción', 18),
     ('Ultimate Spider-Man', 'BrianMichael Bendis', 'Disney XD', 'Animación', 104),
     ('Marvel''s Guardians of the Galaxy: Mission Breakout', 'Marty Isenberg', 'Disney XD', 'Animación', 77);
-
 INSERT INTO "Proyecto"."Videojuego" (
     "Titulo",
     "TipoJuego",
@@ -457,7 +438,6 @@ INSERT INTO "Proyecto"."Videojuego" (
     ('Spider-Man', 'Acción', 'High Moon Studios'),
     ('Deadpool 1', 'Acción y aventura', 'Beenox'),
     ('Guardians of the Galaxy: The Telltale Series', 'Aventura gráfica', 'Telltale Games');
-
 INSERT INTO "Proyecto"."VideojuegoPlataformas" (
     "Titulo",
     "Plataforma"
@@ -475,7 +455,6 @@ INSERT INTO "Proyecto"."VideojuegoPlataformas" (
     ('Guardians of the Galaxy: The Telltale Series', 'PC'),
     ('Guardians of the Galaxy: The Telltale Series', 'iOS'),
     ('Guardians of the Galaxy: The Telltale Series', 'Android');
-
 INSERT INTO "Proyecto"."Conoce" (
     "Civil",
     "Heroe"
@@ -484,7 +463,6 @@ INSERT INTO "Proyecto"."Conoce" (
     ('J. Jonah Jameson', 'Peter Quill'),
     ('May Parker', 'Peter Parker'),
     ('Jack Hammer', 'Nathan Christopher Summers');
-
 INSERT INTO "Proyecto"."Trata" (
     "NombreVillano",
     "NombreCivil"
@@ -493,7 +471,6 @@ INSERT INTO "Proyecto"."Trata" (
     ('Thanos', 'Gwen Stacy'),
     ('Otto Octavius', 'Mary Jane Watson'),
     ('Loki', 'Jack Hammer');
-
 INSERT INTO "Proyecto"."Aparece" (
     "Personaje",
     "Medio",
@@ -534,7 +511,6 @@ INSERT INTO "Proyecto"."Aparece" (
     ('Korath el Perseguidor', 'Spiderman', 'Vin Diesel', 'Interpreta', 'Antagonista'),
     ('La Orden Negra', 'Spiderman', 'Morena Baccarin', 'Interpreta', 'Secundario'),
     ('Loki', 'Guardianes de la Galaxia', 'Tom Hiddleston', 'Interpreta', 'Antagonista');
-
 INSERT INTO "Proyecto"."Interviene" (
     "Organizacion",
     "Medio",
@@ -569,8 +545,6 @@ INSERT INTO "Proyecto"."Tiene" (
     ('Blind Al', 'Estados Unidos'),
     ('Jack Hammer', 'Nueva Zelanda'),
     ('Vanessa Carlysle', 'Italia');
-
-
 INSERT INTO "Proyecto"."Pertenece" (
     "Nombre",
     "Organizacion",
@@ -588,7 +562,6 @@ INSERT INTO "Proyecto"."Pertenece" (
     ('Groot', 'Guardianes de la Galaxia', 'Miembro', '1992-10-25'),
     ('Jack Hammer', 'X-Force', 'Miembro', '2003-03-17'),
     ('Vanessa Carlysle', 'X-Force', 'Miembro', '1973-07-12');
-
 INSERT INTO "Proyecto"."Porta" (
     "Nombre",
     "Objeto"
@@ -604,7 +577,6 @@ INSERT INTO "Proyecto"."Porta" (
     ('Natasha Romanoff', 'Bastón'), 
     ('Rocket Raccoon', 'Armas de Rocket'),
     ('Loki', 'Cetro de Loki');
-
 INSERT INTO "Proyecto"."Posee" (
     "Personaje",
     "Poder",
@@ -629,7 +601,6 @@ INSERT INTO "Proyecto"."Posee" (
     ('Neena Thurman', 'suerte', 'Natural'),
     ('Korath el Perseguidor', 'Super Fuerza', 'Hereditario'),
     ('Christina', 'Super Fuerza', 'Hereditario');
-
 INSERT INTO "Proyecto"."ParticipaObj" (
     "Nombre",
     "CombateFecha",
@@ -664,7 +635,6 @@ INSERT INTO "Proyecto"."ParticipaObj" (
     ('Loki', '2023-06-01', 'Cetro de Loki', 'Nueva York'),
     ('Drax el Destructor', '2004-09-04', 'Cuchillos de Drax', 'Puente Bifrost'),
     ('Rocket Raccoon', '2004-09-04', 'Armas de Rocket', 'Puente Bifrost');
-
 INSERT INTO "Proyecto"."ParticipaPod" (
     "Nombre",
     "Poder",

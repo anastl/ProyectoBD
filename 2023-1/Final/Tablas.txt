@@ -1,74 +1,3 @@
-CREATE SCHEMA IF NOT EXISTS "Proyecto";
-
-CREATE OR REPLACE FUNCTION "Proyecto".civil_check()
-    RETURNS trigger
-    LANGUAGE 'plpgsql'
-AS $BODY$
-BEGIN
-    IF EXISTS (
-		SELECT 1 
-		FROM "Proyecto"."Personaje" 
-		WHERE "Personaje"."EsCivil" = FALSE AND NEW."NombreCompleto" = "Personaje"."NombreCompleto") 
-	THEN
-        RAISE EXCEPTION 'El valor de NombreCompleto no es civil';
-    END IF;
-    RETURN NEW;
-END;
-$BODY$;
-
-CREATE OR REPLACE FUNCTION "Proyecto".heroe_check()
-    RETURNS trigger
-    LANGUAGE 'plpgsql'
-AS $BODY$
-BEGIN
-    IF EXISTS (
-		SELECT 1 
-		FROM "Proyecto"."Civil" 
-		WHERE "Civil"."NombreCompleto" = NEW."NombreCompleto") 
-	OR EXISTS (
-		SELECT 1 
-		FROM "Proyecto"."Villano" 
-		WHERE "Villano"."NombreCompleto" = NEW."NombreCompleto") 
-	THEN
-        RAISE EXCEPTION 'El valor de NombreCompleto ya existe en las tablas Civil o Villano';
-    END IF;
-    RETURN NEW;
-END;
-$BODY$;
-
-CREATE OR REPLACE FUNCTION "Proyecto".pelicula_check()
-    RETURNS trigger
-    LANGUAGE 'plpgsql'
-AS $BODY$
-BEGIN
-    IF NEW."CosteProd" > NEW."Ganancias" THEN
-        RAISE EXCEPTION 'El valor de CosteProd es mayor que el valor de Ganancias';
-    END IF;
-    RETURN NEW;
-END;
-$BODY$;
-
-CREATE OR REPLACE FUNCTION "Proyecto".villano_check()
-    RETURNS trigger
-    LANGUAGE 'plpgsql'
-AS $BODY$
-BEGIN
-    IF EXISTS (
-		SELECT 1 
-		FROM "Proyecto"."Civil" 
-		WHERE "Civil"."NombreCompleto" = NEW."NombreCompleto")  
-	OR EXISTS (
-		SELECT 1 
-		FROM "Proyecto"."Heroe" 
-		WHERE "Heroe"."NombreCompleto" = NEW."NombreCompleto") 
-	THEN
-        RAISE EXCEPTION 'El valor de NombreCompleto ya existe en las tablas Civil o Heroe';
-    END IF;
-    RETURN NEW;
-END;
-$BODY$;
-
-
 CREATE TABLE IF NOT EXISTS "Proyecto"."Personaje"
 (
     "NombreCompleto" character varying(512) NOT NULL,
@@ -92,12 +21,20 @@ CREATE TABLE IF NOT EXISTS "Proyecto"."Civil"
         REFERENCES "Proyecto"."Personaje" ("NombreCompleto") MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
-)
+);
 CREATE TRIGGER civil_check
     BEFORE INSERT OR UPDATE 
     ON "Proyecto"."Civil"
     FOR EACH ROW
     EXECUTE FUNCTION "Proyecto".civil_check();
+
+CREATE TABLE IF NOT EXISTS "Proyecto"."Villano"
+(
+    "NombreCompleto" character varying(512)  NOT NULL,
+    "NombreVillano" character varying(512) ,
+    "Objetivo" character varying(512) ,
+    CONSTRAINT "Villano_pkey" PRIMARY KEY ("NombreCompleto")
+);
 
 CREATE TABLE IF NOT EXISTS "Proyecto"."Heroe"
 (
@@ -115,20 +52,13 @@ CREATE TABLE IF NOT EXISTS "Proyecto"."Heroe"
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
+);
+
 CREATE TRIGGER heroe_check
     BEFORE INSERT OR UPDATE 
     ON "Proyecto"."Heroe"
     FOR EACH ROW
     EXECUTE FUNCTION "Proyecto".heroe_check();
-
-CREATE TABLE IF NOT EXISTS "Proyecto"."Villano"
-(
-    "NombreCompleto" character varying(512)  NOT NULL,
-    "NombreVillano" character varying(512) ,
-    "Objetivo" character varying(512) ,
-    CONSTRAINT "Villano_pkey" PRIMARY KEY ("NombreCompleto")
-)
 CREATE TRIGGER villano_check
     BEFORE INSERT OR UPDATE 
     ON "Proyecto"."Villano"
@@ -267,7 +197,7 @@ CREATE TABLE IF NOT EXISTS "Proyecto"."Pelicula"
         REFERENCES "Proyecto"."Medio" ("Titulo") MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
-)
+);
 CREATE TRIGGER pelicula_check
     BEFORE INSERT OR UPDATE 
     ON "Proyecto"."Pelicula"

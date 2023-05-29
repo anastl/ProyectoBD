@@ -1,0 +1,69 @@
+CREATE SCHEMA IF NOT EXISTS "Proyecto";
+
+CREATE OR REPLACE FUNCTION "Proyecto".civil_check()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+    IF EXISTS (
+		SELECT 1 
+		FROM "Proyecto"."Personaje" 
+		WHERE "Personaje"."EsCivil" = FALSE AND NEW."NombreCompleto" = "Personaje"."NombreCompleto") 
+	THEN
+        RAISE EXCEPTION 'El valor de NombreCompleto no es civil';
+    END IF;
+    RETURN NEW;
+END;
+$BODY$;
+
+CREATE OR REPLACE FUNCTION "Proyecto".heroe_check()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+    IF EXISTS (
+		SELECT 1 
+		FROM "Proyecto"."Civil" 
+		WHERE "Civil"."NombreCompleto" = NEW."NombreCompleto") 
+	OR EXISTS (
+		SELECT 1 
+		FROM "Proyecto"."Villano" 
+		WHERE "Villano"."NombreCompleto" = NEW."NombreCompleto") 
+	THEN
+        RAISE EXCEPTION 'El valor de NombreCompleto ya existe en las tablas Civil o Villano';
+    END IF;
+    RETURN NEW;
+END;
+$BODY$;
+
+CREATE OR REPLACE FUNCTION "Proyecto".pelicula_check()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+    IF NEW."CosteProd" > NEW."Ganancias" THEN
+        RAISE EXCEPTION 'El valor de CosteProd es mayor que el valor de Ganancias';
+    END IF;
+    RETURN NEW;
+END;
+$BODY$;
+
+CREATE OR REPLACE FUNCTION "Proyecto".villano_check()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+    IF EXISTS (
+		SELECT 1 
+		FROM "Proyecto"."Civil" 
+		WHERE "Civil"."NombreCompleto" = NEW."NombreCompleto")  
+	OR EXISTS (
+		SELECT 1 
+		FROM "Proyecto"."Heroe" 
+		WHERE "Heroe"."NombreCompleto" = NEW."NombreCompleto") 
+	THEN
+        RAISE EXCEPTION 'El valor de NombreCompleto ya existe en las tablas Civil o Heroe';
+    END IF;
+    RETURN NEW;
+END;
+$BODY$;
