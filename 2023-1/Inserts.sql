@@ -7,31 +7,182 @@ INSERT INTO "Proyecto Fase 2"."Personaje" (
     "EstadoMarital", 
     "PrimeraAparicion", 
     "EsCivil")
+VALUES 
+    ('Peter Parker', 'Un gran poder conlleva una gran responsabilidad', 'M', 'Marrón', 'Azules', 'Casado', '1992-10-25', FALSE),
+    ('Thor Odinson', '¡Por Odín!', 'M', 'Rubio', 'Azules', 'Soltero', '1985-08-31', FALSE),
+    ('Natasha Romanoff', 'En la venganza y en el amor, la mujer es más bárbara que el hombre', 'F', 'Rojo', 'Verdes', 'Viudo', '1978-12-10', FALSE),
+    ('Eddie Brock', 'Somos Venom', 'M', 'Marrón', 'Azules', 'Soltero', '2003-03-17', FALSE),
+    ('Otto Octavius', 'Soy el Doctor Octopus', 'M', 'No tiene', 'Verdes', 'Soltero', '1999-06-21', FALSE),
+    ('Norman Osborn', '¡Soy el Duende Verde!', 'M', 'Rojo', 'Azules', 'Casado', '1987-11-02', FALSE),
+    ('J. Jonah Jameson', '¡Parker, quiero fotos de Spider-Man!', 'M', 'Marrón', 'Marrones', 'Casado', '1973-07-12', TRUE),
+    ('Gwen Stacy', 'Siempre seré la Gwen de Peter', 'F', 'Rubio', 'Azules', 'Soltero', '1982-02-28', TRUE),
+    ('Mary Jane Watson', '¡Eh, tigre!', 'F', 'Pelirrojo', 'Verdes', 'Casado', '2000-09-15', TRUE),
+    ('Wade Winston Wilson', '¡Bang, bang, bang!', 'M', 'No tiene', 'Azules', 'Soltero', '1989-04-23', FALSE),
+    ('Piotr Nikolaievitch Rasputin', '¡Por la madre Rusia!', 'M', 'Negro', 'Plateados', 'Soltero', '1976-01-05', FALSE),
+    ('Ellie Phimister', 'Oye, Deadpool, ¿por qué no te callas?', 'F', 'Negro', 'Azules', 'Soltero', '1995-11-29', FALSE),
+    ('Nathan Christopher Summers', '¡No tengo tiempo para esto!', 'M', 'No tiene', 'Azules', 'Viudo', '1984-06-18', FALSE),
+    ('Neena Thurman', 'La suerte no tiene nada que ver con ello.', 'F', 'Negro', 'Azules', 'Soltero', '1971-10-08', FALSE),
+    ('Blind Al', '¡Cállate y cómprame una casa!', 'F', 'Gris', 'Azules', 'Soltero', '2002-12-27', FALSE),
+    ('Jack Hammer', '¡Soy Weasel, biatch!', 'M', 'Negro', 'Marrones', 'Soltero', '1998-05-11', TRUE),
+    ('Vanessa Carlysle', '¡Eso es lo que hace un héroe!', 'F', 'Negro', 'Marrones', 'Soltero', '1986-03-22', FALSE),
+    ('Francis Freeman', '¡Mierda!', 'M', 'No tiene', 'Azules', 'Soltero', '1979-09-03', FALSE),
+    ('Christina', '¡Muestrame lo que tienes!', 'F', 'Negro', 'Azules', 'Soltero', '2001-07-14', FALSE),
+    ('Russell Collins', '¡Pero qué te pasa, tío!', 'M', 'Rojo', 'Verdes', 'Soltero', '1990-01-26', FALSE),
+    ('May Parker', 'Con grandes poderes vienen grandes responsabilidades.', 'F', 'Gris', 'Marrones', 'Viudo', '1975-04-16', TRUE),
+    ('Peter Quill', 'Soy Star-Lord.', 'M', 'Marrón', 'Azules', 'Soltero', '1994-02-07', FALSE),
+    ('Gamora', 'Estoy destinada a hacer grandes cosas.', 'F', 'Negro', 'Verdes', 'Soltero', '1983-08-12', FALSE),
+    ('Drax el Destructor', '¡Soy Drax el Destructor!', 'M', 'Gris', 'No tiene', 'Viudo', '1970-12-24', FALSE),
+    ('Rocket Raccoon', '¡Soy el mejor en lo que hago!', 'M', 'Café', 'Negros', 'Soltero', '1997-10-19', FALSE),
+    ('Groot', 'Yo soy Groot.', 'M', 'No tiene', 'Marrones', 'Soltero', '1980-04-03', FALSE),
+    ('Thanos', 'El universo ignora mi grandeza a su propio riesgo.', 'M', 'No tiene', 'Púrpuras', 'Soltero', '2004-09-07', FALSE),
+    ('Ronan el Acusador', 'Juro ante el Cubo Cósmico que voy a destruir a los Guardianes de la Galaxia.', 'M', 'Negro', 'Azules', 'Soltero', '1991-05-20', FALSE),
+    ('Nebula', 'La guerra es mi vida. La muerte es mi trabajo.', 'F', 'No tiene', 'Azules', 'Soltero', '1974-02-14', FALSE),
+    ('Korath el Perseguidor', '¿Quién eres tú para desafiarme?', 'M', 'No tiene', 'Azules', 'Soltero', '1988-07-26', FALSE),
+    ('La Orden Negra', '¡Por mi padre, el gran Thanos!', 'Desc', 'Varía', 'Varía', 'Viudo', '1996-12-08', FALSE),
+    ('Loki', '¡Yo soy Loki, de Asgard! ¡Y estoy aquí para liberarte!', 'M', 'Negro', 'Verde', 'Soltero', '2005-11-01', FALSE);
 
 INSERT INTO "Proyecto Fase 2"."PersonajeOcupaciones" (
     "NombrePersonaje",
     "Ocupacion"
 )
+VALUES 
+    ('Peter Parker', 'Fotógrafo'),
+    ('Peter Parker', 'superhéroe'),
+    ('Thor Odinson', 'Dios'),
+    ('Thor Odinson', 'superhéroe'),
+    ('Natasha Romanoff','Espía'),
+    ('Natasha Romanoff','superhéroe'),
+    ('Eddie Brock', 'Periodista'),
+    ('Eddie Brock', 'superhéroe'),
+    ('Otto Octavius','Científico'),
+    ('Otto Octavius','superhéroe'),
+    ('Norman Osborn','Empresario'),
+    ('Norman Osborn','superhéroe'),
+    ('J. Jonah Jameson','Editor'),
+    ('Gwen Stacy','Estudiante'),
+    ('Mary Jane Watson','Actriz'),
+    ('Wade Winston Wilson','Mercenario'),
+    ('Wade Winston Wilson','asesino'),
+    ('Piotr Nikolaievitch Rasputin', 'Mutante'),
+    ('Piotr Nikolaievitch Rasputin', 'superhéroe'),
+    ('Ellie Phimister','Mutante'),
+    ('Ellie Phimister','superhéroe'),
+    ('Nathan Christopher Summers', 'Mutante'),
+    ('Nathan Christopher Summers', 'superhéroe'),
+    ('Neena Thurman','Mutante'),
+    ('Neena Thurman','superhéroe'),
+    ('Blind Al','Anteriormente agente de inteligencia británica'),
+    ('Jack Hammer', 'Propietario del bar Sister Margaret'),
+    ('Vanessa Carlysle', 'Acompañante'),
+    ('Vanessa Carlysle', 'mercenaria'),
+    ('Francis Freeman', 'Científico'),
+    ('Francis Freeman', 'ex agente del programa Arma X'),
+    ('Christina','Mutante'),
+    ('Russell Collins','Mutante'),
+    ('May Parker', 'Anteriormente dueña de una tienda de juguetes'),
+    ('Peter Quill', 'Ladrón '),
+    ('Peter Quill', 'líder de los Guardianes de la Galaxia'),
+    ('Gamora', 'Asesina '),
+    ('Gamora', 'miembro de los Guardianes de la Galaxia'),
+    ('Drax el Destructor', 'Superhéroe'),
+    ('Drax el Destructor', 'miembro de los Guardianes de la Galaxia'),
+    ('Rocket Raccoon', 'Mercenario'),
+    ('Rocket Raccoon', 'miembro de los Guardianes de la Galaxia'),
+    ('Groot', 'Árbol extraterrestre'),
+    ('Groot', 'miembro de los Guardianes de la Galaxia'),
+    ('Thanos', 'Titán'),
+    ('Thanos', 'señor de la guerra'),
+    ('Ronan el Acusador', 'Kree'),
+    ('Ronan el Acusador', 'oficial del Imperio Kree'),
+    ('Nebula', 'Pirata espacial'),
+    ('Nebula', 'mercenaria'),
+    ('Korath el Perseguidor', 'Kree'),
+    ('Korath el Perseguidor', 'miembro de la Fuerza Estelar'),
+    ('La Orden Negra', 'Aliados de Thanos'),
+    ('La Orden Negra', 'guerreros'),
+    ('Loki', 'Dios de la travesura y la mentira');
 
 INSERT INTO "Proyecto Fase 2"."PersonajeCreadores"
 (
     "NombrePersonaje",
     "Creador"
 )
+VALUES
+    ('Peter Parker', 'Stan Lee'),
+    ('Peter Parker', 'Steve Ditko'),
+    ('Thor Odinson', 'Stan Lee'),
+    ('Thor Odinson', 'Jack Kirby'),
+    ('Thor Odinson', 'Larry Lieber'),
+    ('Natasha Romanoff', 'Stan Lee'),
+    ('Natasha Romanoff', 'Don Heck'),
+    ('Natasha Romanoff', 'Don Rico'),
+    ('Eddie Brock', 'David Michelinie'),
+    ('Eddie Brock', 'Todd McFarlane'),
+    ('Otto Octavius','Stan Lee'),
+    ('Otto Octavius','Steve Ditko'),
+    ('Norman Osborn', 'Stan Lee'),
+    ('Norman Osborn', 'Steve Ditko'),
+    ('J. Jonah Jameson', 'Stan Lee'),
+    ('J. Jonah Jameson', 'Steve Ditko'),
+    ('Gwen Stacy', 'Stan Lee'),
+    ('Gwen Stacy', 'Steve Ditko'),
+    ('Mary Jane Watson', 'Stan Lee'),
+    ('Mary Jane Watson', 'John Romita Sr.'),
+    ('Wade Winston Wilson', 'Fabian Nicieza'),
+    ('Wade Winston Wilson', 'Rob Liefeld'),
+    ('Piotr Nikolaievitch Rasputin', 'Len Wein'),
+    ('Piotr Nikolaievitch Rasputin', 'Dave Cockrum'),
+    ('Ellie Phimister', 'Grant Morrison'),
+    ('Ellie Phimister', 'Frank Quitely'),
+    ('Nathan Christopher Summers', 'Rob Liefeld'),
+    ('Nathan Christopher Summers', 'Louise Simonson'),
+    ('Neena Thurman', 'Rob Liefeld'),
+    ('Blind Al', 'Joe Kelly'),
+    ('Blind Al', 'Ed McGuinness'),
+    ('Jack Hammer', 'Fabian Nicieza'),
+    ('Jack Hammer', 'Joe Madureira'),
+    ('Vanessa Carlysle','Joe Kelly'),
+    ('Vanessa Carlysle','Ed McGuinness'),
+    ('Francis Freeman', 'Fabian Nicieza'),
+    ('Francis Freeman', 'Joe Madureira'),
+    ('Christina', 'Simon Kinberg'),
+    ('Russell Collins', 'Fabian Nicieza'),
+    ('Russell Collins', 'Rob Liefeld'),
+    ('May Parker', 'Stan Lee'),
+    ('May Parker', 'Steve Ditko'),
+    ('Peter Quill', 'Steve Englehart'),
+    ('Peter Quill', 'Steve Gan'),
+    ('Gamora', 'Jim Starlin'),
+    ('Drax el Destructor', 'Mike Friedrich'),
+    ('Drax el Destructor', 'Jim Starlin'),
+    ('Rocket Raccoon', 'Bill Mantlo'),
+    ('Rocket Raccoon', 'Keith Giffen'),
+    ('Groot', 'Stan Lee'),
+    ('Groot', 'Jack Kirby'),
+    ('Thanos', 'Jim Starlin'),
+    ('Ronan el Acusador', 'Mark Gruenwald'),
+    ('Ronan el Acusador', 'Greg Capullo'),
+    ('Nebula', 'Roger Stern'),
+    ('Nebula', 'John Buscema'),
+    ('Korath el Perseguidor', 'Mark Gruenwald'),
+    ('Korath el Perseguidor', 'Greg Capullo'),
+    ('La Orden Negra', 'Jonathan Hickman'),
+    ('La Orden Negra', 'Jerome Opeña'),
+    ('Loki', 'Stan Lee'),
+    ('Loki', 'Larry Lieber'),
+    ('Loki', 'Jack Kirby');
 
-INSERT INTO "Proyecto Fase 2"."Heroe"
-(
-    "NombreCompleto",
-    "NombreHeroe",
-    "ColoresTraje",
-    "Logotipo",
-    "Rival"
-)
 
 INSERT INTO "Proyecto Fase 2"."Civil"
 (
     "NombreCompleto"
 )
+VALUES 
+    ('J. Jonah Jameson'),
+    ('May Parker'),
+    ('Gwen Stacy'),
+    ('Mary Jane Watson'),
+    ('Jack Hammer');
 
 INSERT INTO "Proyecto Fase 2"."Villano"
 (
@@ -39,24 +190,107 @@ INSERT INTO "Proyecto Fase 2"."Villano"
     "NombreVillano",
     "Objetivo"
 )
+VALUES 
+    ('Thanos', 'Thanos', 'Reunir las Gemas del Infinito para aniquilar la mitad del universo'),
+    ('Ronan el Acusador', 'Ronan el Acusador', 'Destruir a Xandar y obtener el Orbe'),
+    ('Korath el Perseguidor', 'Korath el Perseguidor', 'Ayudar a Ronan a obtener el Orbe'),
+    ('Otto Octavius', 'Doctor Octopus', 'Dominar el mundo'),
+    ('Norman Osborn', 'Green Goblin', 'Destruir al héroe arácnido y gobernar la ciudad de Nueva York'),
+    ('Francis Freeman', 'Ajax', 'Crear soldados mutantes indestructibles'),
+    ('Christina', 'Angel Dust', 'Defender a su hermano mutante y luchar por la supremacía mutante'),
+    ('Loki', 'Loki', 'Dominar Asgard y la Tierra');
+
+INSERT INTO "Proyecto Fase 2"."Heroe"
+(
+    "NombreCompleto",
+    "NombreHeroe",
+    "Logotipo",
+    "Rival"
+)
+VALUES 
+    ('Peter Parker', 'Spider-Man', 'img/spiderman.jpg', 'Thanos'),
+    ('Thor Odinson', 'Thor', 'img/thor.jpg', 'Thanos'),
+    ('Natasha Romanoff', 'Black Widow', 'img/widow.jpg', 'Ronan el Acusador'),
+    ('Eddie Brock', 'Venom', 'img/venom.jpg', 'Ronan el Acusador'),
+    ('Wade Winston Wilson', 'Deadpool', 'img/deadpool.jpg', 'Korath el Perseguidor'),
+    ('Piotr Nikolaievitch Rasputin', 'Colossus', 'img/colossus.jpg', 'Korath el Perseguidor'),
+    ('Ellie Phimister', 'Negasonic Teenage Warhead', 'img/negasonic.jpg', 'Otto Octavius'),
+    ('Nathan Christopher Summers', 'Cable', 'img/cable.jpg', 'Otto Octavius'),
+    ('Peter Quill', 'Star-Lord', 'img/starlord.jpg', 'Norman Osborn'),
+    ('Gamora', 'Gamora', 'img/gamora.jpg', 'Norman Osborn'),
+    ('Drax el Destructor', 'Drax el Destructor', 'img/drax.jpg', 'Francis Freeman'),
+    ('Rocket Raccoon', 'Rocket Raccoon', 'img/rocket.jpg', 'Francis Freeman'),
+    ('Groot', 'Groot', 'img/groot.jpg', 'Christina'),
+    ('Nebula', 'Nebula', 'img/nebula.jpg', 'Christina'),
+    ('Neena Thurman', 'Domino', 'img/domino.jpg', 'Loki'),
+    ('Blind Al', 'Blind Al', 'img/blindal.jpg', 'Loki'),
+    ('Vanessa Carlysle', 'Vanessa Carlysle', 'img/Vanessa.jpg', 'Loki');
+
 
 INSERT INTO "Proyecto Fase 2"."VillanoEnemigos"
 (
     "Enemigo",
     "NombreCompleto"
 )
+VALUES 
+    ('los Guardianes de la Galaxia', 'Thanos'),
+    ('Los Guardianes de la Galaxia', 'Ronan el Acusador'),
+    ('Los Guardianes de la Galaxia', 'Korath el Perseguidor'),
+    ('Spider-Man', 'Otto Octavius'),
+    ('Spider-Man', 'Norman Osborn'),
+    ('Deadpool', 'Francis Freeman'),
+    ('Deadpool', 'Christina'),
+    ('Thor', 'Loki'),
+    ('Los Vengadores', 'Loki');
 
 INSERT INTO "Proyecto Fase 2"."ColoresTraje"
 (
     "Heroe",
     "ColorTraje"
 )
+VALUES 
+    ('Peter Parker', 'Azul'),
+    ('Peter Parker', 'rojo'),
+    ('Thor Odinson', 'Rojo'),
+    ('Thor Odinson', 'plateado'),
+    ('Natasha Romanoff', 'Negro'),
+    ('Eddie Brock', 'Negro'),
+    ('Wade Winston Wilson', 'Rojo'),
+    ('Wade Winston Wilson', 'negro'),
+    ('Piotr Nikolaievitch Rasputin', 'Plateado'),
+    ('Ellie Phimister', 'Negro'),
+    ('Ellie Phimister', 'amarillo'),
+    ('Nathan Christopher Summers', 'Azul'),
+    ('Nathan Christopher Summers', 'amarillo'),
+    ('Peter Quill', 'Rojo'),
+    ('Peter Quill', 'negro'),
+    ('Gamora', 'Negro'),
+    ('Gamora', 'plateado'),
+    ('Drax el Destructor', 'Gris'),
+    ('Drax el Destructor', 'rojo'),
+    ('Rocket Raccoon', 'Marrón'),
+    ('Rocket Raccoon', 'blanco'),
+    ('Groot', 'Marrón'),
+    ('Groot', 'verde'),
+    ('Nebula', 'Azul'),
+    ('Nebula', 'plateado'),
+    ('Neena Thurman', 'Negro'),
+    ('Neena Thurman', 'blanco'),
+    ('Blind Al', 'Varía'),
+    ('Vanessa Carlysle', 'azul');
 
 INSERT INTO "Proyecto Fase 2"."Nacionalidad"
 (
     "Pais",
     "Nombre" 
 )
+VALUES 
+    ('Estados Unidos', 'Estadounidense'),
+    ('Canada', 'Canadiense'),
+    ('Inglaterra', 'Británico'),
+    ('Rusia', 'Ruso'),
+    ('Italia', 'Italiano'),
+    ('Nueva Zelanda', 'Neozelandés');
 
 INSERT INTO "Proyecto Fase 2"."Organizacion"
 (
@@ -69,6 +303,10 @@ INSERT INTO "Proyecto Fase 2"."Organizacion"
     "Fundador",
     "Lider"
 )
+VALUES 
+    ('Guardianes de la Galaxia', 'Todos juntos somos más fuertes', 'Equipo de superhéroes', 'Proteger la galaxia de amenazas cósmicas y mantener la paz y la justicia en el universo.','Planeta Xandar', '1974-09-09', 'Peter Quill', 'Peter Quill'),
+    ('Los Seis Siniestros', '¡Unidos contra Spider-Man!', 'Equipo de supervillanos', 'Destruir a Spider-Man y gobernar el mundo del crimen organizado.', 'Estados Unidos', '1973-02-18', 'Otto Octavius', 'Otto Octavius'),
+    ('X-Force', '¡La fuerza para hacer lo correcto!', 'Equipo de héroes mercenarios', 'Realizar misiones peligrosas y secretas que otros héroes no pueden o no quieren hacer.', 'Estados Unidos', '1975-06-07', 'Nathan Christopher Summers', 'Nathan Christopher Summers');
 
 INSERT INTO "Proyecto Fase 2"."Sede"
 (
@@ -77,12 +315,31 @@ INSERT INTO "Proyecto Fase 2"."Sede"
     "TipoEdificacion",
     "NombreOrganizacion"
 )
+VALUES 
+    ('Fortaleza de Knowhere', 'En la cabeza decapitada de un Celestial', 'Nave', 'Guardianes de la Galaxia'),
+    ('La Torre Oscura', 'Nueva York', 'Torre', 'Los Seis Siniestros'),
+    ('La Base del X-Force', 'Colorado', 'Apartamento', 'X-Force');
 
 INSERT INTO "Proyecto Fase 2"."Poder"
 (
     "Nombre",
     "Descripcion"
 )
+VALUES 
+    ('sentido arácnido', 'un sexto sentido que usa spiderman'),
+    ('rayo', 'capacidad de manipular los rayos y el clima'),
+    ('Super Fuerza', 'regeneración, capacidad de adherirse a superficies y lanzar telarañas'),
+    ('Regeneración', 'capacidad de regenerar cualquier herida'),
+    ('Cuerpo de acero', 'Transformación en acero orgánico'),
+    ('Control de la energia', 'Manipulación de explosiones nucleares y poderosos campos de fuerza'),
+    ('Telepatía', 'capacidad de para enviar mensajes y controlar atraverz de la mente'),
+    ('agilidad y resistencia', 'movimientos mas rapidos y reflejos que el humano promedio'),
+    ('Inteligencia superior', 'intelecto superior al promedio'),
+    ('control de la madera', 'capacidad de absorber madera para crecer y cambiar de forma'),
+    ('suerte', 'Habilidad sobrenatural para manipular la probabilidad y la suerte'),
+    ('Magia', 'capacidad de manipular la magia y la ilusión'),
+    ('Cambio de apariencia', 'poder modificar su apariencia a su gusto'),
+    ('Resistencia psíquica', 'abilidad de resistir los ataques telepáticos de otros personajes');
 
 INSERT INTO "Proyecto Fase 2"."Objeto"
 (
@@ -91,18 +348,64 @@ INSERT INTO "Proyecto Fase 2"."Objeto"
     "TipoObj",
     "Descripcion"
 )
+VALUES 
+    ('Traje de Spider-Man', 'Tela de araña sintética', 'Traje de superhéroe', 'Traje con diseño de araña y tecnología avanzada, que incluye lanzadores de telarañas y sensores arácnidos'),
+    ( 'Mjolnir', 'Uru', 'Martillo mágico', 'Martillo con capacidad de manipular los rayos y el clima, y solo puede ser levantado por aquellos que sean dignos'),
+    ( 'Espadas de Deadpool', 'Acero', 'Arma blanca', 'Par de espadas con capacidad de regeneración y tecnología avanzada, que incluye lanzadores de cuchillas y explosivos'),
+    ('Element Blasters', 'Tecnología avanzada', 'Arma de energía', 'Par de pistolas con capacidad para disparar descargas de energía y manipular elementos como fuego y hielo'),
+    ('Godslayer', 'Aleación de metales alienígenas', 'Espada alienígena', 'Espada con capacidad para cortar y destruir cualquier objeto, incluso seres divinos'),
+    ('Cuchillos de Drax', 'Acero', 'Arma blanca', 'Par de cuchillos con capacidad de cortar casi cualquier objeto, incluso la piel de Thanos'),
+    ('Armas de Rocket', 'Tecnología avanzada', 'Armas de fuego', 'Amplio arsenal de armas de fuego y explosivos personalizados, que incluyen ametralladoras, lanzacohetes y granadas'),
+    ('Kree Battle Suit', 'Aleación de metales alienígenas', 'Traje de batalla', 'Traje con capacidad de aumentar la fuerza y la resistencia, y de manipular la energía'), 
+    ('Armadura de Doctor Octopus', 'Aleación de metales', 'Traje de supervillano', 'Traje con cuatro brazos mecánicos que le otorgan fuerza sobrehumana y habilidades técnicas avanzadas'),
+    ('Glider del Green Goblin', 'Aleación de metales', 'Vehículo volador', 'Glider con capacidad de vuelo y armamento avanzado, que incluye bombas y lanzadores de calabazas explosivas'),
+    ('Espadas de Ajax', 'Acero', 'Arma blanca', 'Par de espadas con capacidad de regeneración y tecnología avanzada, que incluye lanzadores de cuchillas y explosivos'),
+    ('Cetro de Loki', 'Aleación de metales alienígenas', 'Arma mágica', 'Cetro con capacidad de manipular la mente y crear ilusiones, y de proyectar energía'),
+    ('Casco', 'Plástico y metal', 'casco', 'Un casco personalizado que Peter Quill usa para protegerse durante sus misiones como Star-Lord.'),
+    ('Arma de fuego', 'Acero inoxidable', 'arma', 'Un arma de fuego personalizada que Blind Al ha usado en misiones de mercenario y defensa personal.'),
+    ('Bastón', 'Fibra de carbono','arma', 'Un bastón de combate personalizado que Natasha Romanoff usa en su estilo de lucha cuerpo a cuerpo.');
 
 INSERT INTO "Proyecto Fase 2"."ObjetoCreadores"
 (
     "ObjetoNombre",
     "Creador"
 )
+VALUES 
+    ('Traje de Spider-Man', 'Peter Parker'),
+    ( 'Mjolnir', 'Los enanos de Nidavellir'),
+    ( 'Espadas de Deadpool', 'Desconocido'),
+    ('Element Blasters','Desconocido'),
+    ('Godslayer', 'Desconocido'),
+    ('Cuchillos de Drax','Desconocido'),
+    ('Armas de Rocket','Desconocido'),
+    ('Kree Battle Suit', 'Los Kree'), 
+    ('Armadura de Doctor Octopus', 'Otto Octavius'),
+    ('Glider del Green Goblin','Norman Osborn'),
+    ('Espadas de Ajax', 'Desconocido'),
+    ('Cetro de Loki', 'Desconocido'),
+    ('Casco', 'Peter Quill'),
+    ('Arma de fuego', 'Blind Al'),
+    ('Bastón', 'Natasha Romanoff');
 
 INSERT INTO "Proyecto Fase 2"."Combate"
 (
     "Fecha",
     "Lugar"
 )
+VALUES 
+    ('2023-06-01', 'Nueva York'),
+    ('2023-07-15', 'Ciudad de México'),
+    ('2023-07-10', 'Ciudad de México'),
+    ('2023-08-23', 'Planeta Xandar'),
+    ('2023-08-20', 'Planeta Xandar'),
+    ('2015-07-03','Sokovia'),
+	('2093-08-03','Asgard'),
+	('2004-09-04','Puente Bifrost'),
+	('2023-06-01','Puente Bifrost'),
+	('2000-01-05','Knowhere'),
+    ('2023-08-23', 'Ciudad de México'),
+    ('2023-06-01', 'Puente Bifrost'),
+    ('2023-07-15','Knowhere');
 
 INSERT INTO "Proyecto Fase 2"."Medio"
 (
@@ -112,6 +415,21 @@ INSERT INTO "Proyecto Fase 2"."Medio"
     "FechaEstr",
     "Rating"
 )
+VALUES 
+    ('Spider-Man: The Animated Series', 'Marvel Productions', 'Peter Parker se convierte en Spider-Man y se enfrenta a los villanos más peligrosos de Nueva York.', '1994-11-19', 4),
+    ('Deadpool 2', 'Marvel Television', 'Un mercenario desfigurado se convierte en el antihéroe Deadpool y lucha contra los villanos más peligrosos del mundo.', '2013-06-25', 4),
+    ('Guardians of the Galaxy', 'Marvel Animation', 'Un grupo de inadaptados se unen para convertirse en los héroes más improbables de la galaxia y luchar contra las amenazas cósmicas.', '2015-09-05', 3),
+    ('Ultimate Spider-Man', 'Marvel Animation', 'Peter Parker se convierte en Spider-Man y se une a S.H.I.E.L.D. para entrenar y luchar contra los villanos más peligrosos del mundo.', '2012-04-01', 3),
+    ('Marvel''s Guardians of the Galaxy: Mission Breakout', 'Los Guardianes de la Galaxia luchan contra Thanos y otras amenazas cósmicas mientras buscan la forma de escapar de la prisión de alta seguridad conocida como La Balsa.', 'Marvel Animation', '2018-03-18', 3),
+    ('Spider-Man', 'Insomniac Games', 'Peter Parker lucha contra los villanos de Nueva York mientras intenta equilibrar su vida personal y su papel como superhéroe.', '2018-09-07', 5),
+    ('Deadpool 1', 'High Moon Studios', 'Deadpool se embarca en una misión para salvar al mundo de una amenaza alienígena.', '2013-06-25', 4),
+    ('Guardians of the Galaxy: The Telltale Series', 'Telltale Games','Los Guardianes de la Galaxia se embarcan en una misión para proteger el universo de una amenaza cósmica.', '2017-04-18', 4),
+    ('Spiderman', 'Marvel Studios', 'Sinopsis de Spiderman', '2022-06-13', 4),
+    ('Deadpool 3', '20th Century Fox',  'Sinopsis de Deadpool', '2016-02-12', 4),
+    ('Guardianes de la Galaxia', 'Marvel Studios', 'Sinopsis de Guardianes de la Galaxia', '2014-08-01', 4),
+    ('Spider-Man: Into the Spider-Verse', 'Sony Pictures Animation', 'Miles Morales se convierte en el Spider-Man de su realidad y se une a sus contrapartes de otras dimensiones para detener una amenaza común.', '2018-12-14',  4),
+    ('The Invincible Iron Man', 'Marvel Animation', 'Cuando un científico brillante descubre una tecnología peligrosa, es secuestrado por terroristas. Tony Stark debe usar su ingenio y su armadura de Iron Man para salvar al científico y detener una amenaza mayor.', '2007-01-23',  3),
+    ('X-Force: The Movie', 'Marvel Studios', 'Cuando un grupo de mutantes se une para formar X-Force, deben luchar contra una amenaza que pone en peligro la existencia de la humanidad.', '2022-07-15',  3);
 
 INSERT INTO "Proyecto Fase 2"."Pelicula"
 (
@@ -123,6 +441,13 @@ INSERT INTO "Proyecto Fase 2"."Pelicula"
     "CosteProd",
     "Ganancias"
 )
+VALUES 
+    ('Spiderman', 'Jon Watts', 130, 'Sony Pictures', 'Acción', 200.00, 5000.00),
+    ('Deadpool 3', 'Tim Miller', 108, '20th Century Fox', 'Acción', 580.00, 7852.00),
+    ('Guardianes de la Galaxia', 'James Gunn', 121, 'Walt Disney Studios', 'Ciencia ficción', 170.00, 7733.00),
+    ('Spider-Man: Into the Spider-Verse', 'Bob Persichetti', 185, 'Sony Pictures Releasing', 'Animada', 456.00, 8998.00),
+    ('The Invincible Iron Man', 'Patrick Archibald', 148, 'Lionsgate', 'Animada', 648.00, 5540.00),
+    ('X-Force: The Movie', 'Drew Goddard', 120, 'Walt Disney Studios Motion Pictures', 'Acción', 710.00, 4000.00);
 
 INSERT INTO "Proyecto Fase 2"."Serie"
 (
@@ -132,6 +457,12 @@ INSERT INTO "Proyecto Fase 2"."Serie"
     "Tipo",
     "TotalEpi"
 )
+VALUES 
+    ('Spider-Man: The Animated Series', 'Stan Lee', 'Fox Kids', 'Animación', 65),
+    ('Deadpool 2', 'Marty Isenberg', 'Disney XD', 'Animación', 77),
+    ('Guardians of the Galaxy', 'Donald Glover', 'FX', 'Acción', 18),
+    ('Ultimate Spider-Man', 'BrianMichael Bendis', 'Disney XD', 'Animación', 104),
+    ('Marvel''s Guardians of the Galaxy: Mission Breakout', 'Marty Isenberg', 'Disney XD', 'Animación', 77);
 
 INSERT INTO "Proyecto Fase 2"."Videojuego"
 (
@@ -139,24 +470,49 @@ INSERT INTO "Proyecto Fase 2"."Videojuego"
     "TipoJuego",
     "CompanniaPub"
 )
+VALUES 
+    ('Spider-Man', 'Acción', 'High Moon Studios'),
+    ('Deadpool 1', 'Acción y aventura', 'Beenox'),
+    ('Guardians of the Galaxy: The Telltale Series', 'Aventura gráfica', 'Telltale Games');
 
 INSERT INTO "Proyecto Fase 2"."VideojuegoPlataformas"
 (
     "Titulo",
     "Plataforma"
 )
+VALUES 
+    ('Deadpool 1', 'PlayStation 4'),
+    ('Deadpool 1', 'Xbox One'),
+    ('Deadpool 1', 'PC'),
+    ('Spider-Man', 'PlayStation 3'),
+    ('Spider-Man', 'Xbox 360'),
+    ('Spider-Man', 'Wii'),
+    ('Spider-Man', 'PC'),
+    ('Guardians of the Galaxy: The Telltale Series', 'PlayStation 4'),
+    ('Guardians of the Galaxy: The Telltale Series', 'Xbox One'),
+    ('Guardians of the Galaxy: The Telltale Series', 'PC'),
+    ('Guardians of the Galaxy: The Telltale Series', 'iOS'),
+    ('Guardians of the Galaxy: The Telltale Series', 'Android');
 
 INSERT INTO "Proyecto Fase 2"."Conoce"
 (
     "Civil",
     "Heroe"
 )
+VALUES 
+    ('J. Jonah Jameson', 'Peter Quill'),
+    ('May Parker', 'Peter Parker'),
+    ('Jack Hammer', 'Nathan Christopher Summers');
 
 INSERT INTO "Proyecto Fase 2"."Trata"
 (
     "NombreVillano",
     "NombreCivil"
 )
+VALUES 
+    ('Thanos', 'Gwen Stacy'),
+    ('Otto Octavius', 'Mary Jane Watson'),
+    ('Loki', 'Jack Hammer');
 
 INSERT INTO "Proyecto Fase 2"."Aparece"
 (
@@ -166,6 +522,39 @@ INSERT INTO "Proyecto Fase 2"."Aparece"
     "TipoActor",
     "Rol"
 )
+VALUES 
+    ('Peter Parker', 'Spiderman', 'Tom Holland', 'Interpreta', 'Protagonista'),
+    ('Thor Odinson', 'Guardianes de la Galaxia', 'Chris Hemsworth', 'Interpreta', 'Protagonista'),
+    ('Natasha Romanoff', 'Spiderman', 'Zoe Saldana', 'Interpreta', 'Secundario'),
+    ('Eddie Brock', 'Spiderman', 'Neil Patrick Harris', 'Interpreta', 'Secundario'),
+    ('Otto Octavius', 'Spiderman', 'T.J. Miller', 'Interpreta', 'Antagonista'),
+    ('Norman Osborn', 'Spiderman', 'T.J. Miller', 'Interpreta', 'Antagonista'),
+    ('J. Jonah Jameson', 'Spiderman', 'Rob Liefeld', 'Interpreta', 'Secundario'),
+    ('Gwen Stacy', 'Spiderman', 'Zendaya', 'Interpreta', 'Secundario'),
+    ('Mary Jane Watson', 'Spiderman', 'Zendaya', 'Interpreta', 'Secundario'),
+    ('Wade Winston Wilson', 'X-Force: The Movie', 'Ryan Reynolds', 'Interpreta', 'Protagonista'),
+    ('Piotr Nikolaievitch Rasputin', 'X-Force: The Movie', 'Rob Liefeld', 'Interpreta', 'Protagonista'),
+    ('Ellie Phimister', 'Spiderman', 'Rob Liefeld', 'Interpreta', 'Secundario'),
+    ('Nathan Christopher Summers', 'X-Force: The Movie', 'Vin Diesel', 'Interpreta', 'Protagonista'),
+    ('Neena Thurman', 'X-Force: The Movie', 'Zoe Saldana', 'Interpreta', 'Protagonista'),
+    ('Blind Al', 'X-Force: The Movie', 'T.J. Miller', 'Interpreta', 'Secundario'),
+    ('Jack Hammer', 'X-Force: The Movie', 'T.J. Miller', 'Interpreta', 'Secundario'),
+    ('Vanessa Carlysle', 'X-Force: The Movie', 'Morena Baccarin', 'Interpreta', 'Secundario'),
+    ('Francis Freeman', 'X-Force: The Movie', 'Morena Baccarin', 'Interpreta', 'Antagonista'),
+    ('Christina', 'X-Force: The Movie', 'Morena Baccarin', 'Interpreta', 'Antagonista'),
+    ('Russell Collins', 'Guardianes de la Galaxia', 'Chris Hemsworth', 'Interpreta', 'Secundario'),
+    ('May Parker', 'Spiderman', 'Morena Baccarin', 'Interpreta', 'Secundario'),
+    ('Peter Quill', 'Guardianes de la Galaxia', 'Chris Pratt', 'Interpreta', 'Protagonista'),
+    ('Gamora', 'Guardianes de la Galaxia', 'Vanessa Marshall', 'Interpreta', 'Protagonista'),
+    ('Drax el Destructor', 'Guardianes de la Galaxia', 'Dave Bautista', 'Interpreta', 'Protagonista'),
+    ('Rocket Raccoon', 'Guardianes de la Galaxia', 'Trevor Devall', 'Presta su voz', 'Protagonista'),
+    ('Groot', 'Guardianes de la Galaxia', 'Adam Harrington', 'Presta su voz', 'Antagonista'),
+    ('Thanos', 'Guardianes de la Galaxia', 'Vin Diesel', 'Interpreta', 'Antagonista'),
+    ('Ronan el Acusador', 'Spiderman', 'Vin Diesel', 'Interpreta', 'Antagonista'),
+    ('Nebula', 'Guardianes de la Galaxia', 'Morena Baccarin', 'Interpreta', 'Protagonista'),
+    ('Korath el Perseguidor', 'Spiderman', 'Vin Diesel', 'Interpreta', 'Antagonista'),
+    ('La Orden Negra', 'Spiderman', 'Morena Baccarin', 'Interpreta', 'Secundario'),
+    ('Loki', 'Guardianes de la Galaxia', 'Tom Hiddleston', 'Interpreta', 'Antagonista');
 
 INSERT INTO "Proyecto Fase 2"."Interviene"
 (
@@ -174,12 +563,36 @@ INSERT INTO "Proyecto Fase 2"."Interviene"
     "Rol",
     "EstadoFinal"
 )
-
+VALUES
+    ('Guardianes de la Galaxia', 'Guardianes de la Galaxia', 'Protagonista', 'intacta'),
+    ('Los Seis Siniestros', 'Spiderman', 'Enemiga', 'destruida'),
+    ('X-Force', 'X-Force: The Movie', 'Protagonista', 'intacta');
 INSERT INTO "Proyecto Fase 2"."Tiene"
 (
     "NombreCompleto",
     "Nacionalidad"
 )
+VALUES 
+    ('Peter Parker', 'Estados Unidos'),
+    ('Otto Octavius', 'Estados Unidos'),
+    ('Peter Parker', 'Inglaterra'),
+    ('J. Jonah Jameson', 'Italia'),
+    ('Gwen Stacy', 'Canada'),
+    ('Mary Jane Watson', 'Nueva Zelanda'),
+    ('Wade Winston Wilson', 'Inglaterra'),
+    ('Piotr Nikolaievitch Rasputin', 'Rusia'),
+    ('Neena Thurman', 'Estados Unidos'),
+    ('Francis Freeman', 'Estados Unidos'),
+    ('May Parker', 'Canada'),
+    ('Peter Quill', 'Estados Unidos'),
+    ('Gamora', 'Nueva Zelanda'),
+    ('Drax el Destructor', 'Italia'),
+    ('Rocket Raccoon', 'Estados Unidos'),
+    ('Groot', 'Nueva Zelanda'),
+    ('Blind Al', 'Estados Unidos'),
+    ('Jack Hammer', 'Nueva Zelanda'),
+    ('Vanessa Carlysle', 'Italia');
+
 
 INSERT INTO "Proyecto Fase 2"."Pertenece"
 (
@@ -188,12 +601,34 @@ INSERT INTO "Proyecto Fase 2"."Pertenece"
     "Cargo",
     "Fecha"
 )
+VALUES 
+    ('Otto Octavius', 'Los Seis Siniestros', 'Lider', '2001-07-14'),
+    ('Wade Winston Wilson', 'X-Force', 'Miembro', '1997-10-19'),
+    ('Piotr Nikolaievitch Rasputin', 'X-Force', 'Miembro', '1999-06-21'),
+    ('Peter Quill', 'Guardianes de la Galaxia', 'Lider', '2000-09-15'),
+    ('Gamora', 'Guardianes de la Galaxia', 'Miembro', '1976-01-05'),
+    ('Drax el Destructor', 'Guardianes de la Galaxia', 'Miembro', '1986-03-22'),
+    ('Rocket Raccoon', 'Guardianes de la Galaxia', 'Miembro', '1979-09-03'),
+    ('Groot', 'Guardianes de la Galaxia', 'Miembro', '1992-10-25'),
+    ('Jack Hammer', 'X-Force', 'Miembro', '2003-03-17'),
+    ('Vanessa Carlysle', 'X-Force', 'Miembro', '1973-07-12');
 
 INSERT INTO "Proyecto Fase 2"."Porta"
 (
     "Nombre",
     "Objeto"
 )
+VALUES 
+    ('Peter Parker', 'Traje de Spider-Man'),
+    ('Wade Winston Wilson', 'Espadas de Deadpool'),
+    ('Francis Freeman', 'Espadas de Ajax'),
+    ('Drax el Destructor', 'Cuchillos de Drax'),
+    ('Norman Osborn', 'Glider del Green Goblin'), 
+    ('Blind Al', 'Arma de fuego'), 
+    ('Peter Quill', 'Casco'), 
+    ('Natasha Romanoff', 'Bastón'), 
+    ('Rocket Raccoon', 'Armas de Rocket'),
+    ('Loki', 'Cetro de Loki');
 
 INSERT INTO "Proyecto Fase 2"."Posee"
 (
@@ -201,6 +636,25 @@ INSERT INTO "Proyecto Fase 2"."Posee"
     "Poder",
     "FormaObtencion"
 )
+VALUES 
+    ('Peter Parker', 'sentido arácnido', 'Artificial'),
+    ('Wade Winston Wilson', 'Regeneración', 'Artificial'),
+    ('Piotr Nikolaievitch Rasputin', 'Cuerpo de acero', 'Natural'),
+    ('Thor Odinson', 'Super Fuerza', 'Hereditario'),
+    ('Drax el Destructor', 'Super Fuerza', 'Hereditario'),
+    ('Thanos', 'Super Fuerza', 'Hereditario'),
+    ('Groot', 'control de la madera', 'Natural'),
+    ('Ronan el Acusador', 'Super Fuerza', 'Hereditario'),
+    ('Otto Octavius', 'Resistencia psíquica', 'Artificial'),
+    ('Nathan Christopher Summers', 'Telepatía', 'Artificial'),
+    ('Eddie Brock', 'Regeneración', 'Artificial'),
+    ('Ellie Phimister', 'Control de la energia', 'Natural'),
+    ('Gamora', 'Super Fuerza', 'Hereditario'),
+    ('Vanessa Carlysle', 'Cambio de apariencia', 'Natural'),
+    ('Nebula', 'Super Fuerza', 'Hereditario'),
+    ('Neena Thurman', 'suerte', 'Natural'),
+    ('Korath el Perseguidor', 'Super Fuerza', 'Hereditario'),
+    ('Christina', 'Super Fuerza', 'Hereditario');
 
 INSERT INTO "Proyecto Fase 2"."ParticipaObj"
 (
@@ -209,6 +663,34 @@ INSERT INTO "Proyecto Fase 2"."ParticipaObj"
     "Objeto",
     "CombateLugar" 
 )
+VALUES 
+    ('Peter Parker', '2023-06-01', 'Traje de Spider-Man', 'Nueva York'),
+    ('Wade Winston Wilson', '2023-06-01', 'Espadas de Deadpool', 'Nueva York'),
+    ('Francis Freeman', '2023-06-01', 'Espadas de Ajax', 'Nueva York'), 
+    ('Drax el Destructor', '2023-07-15', 'Cuchillos de Drax', 'Ciudad de México'),
+    ('Norman Osborn', '2023-07-15', 'Glider del Green Goblin', 'Ciudad de México'), 
+    ('Blind Al', '2023-07-15', 'Arma de fuego', 'Ciudad de México'), 
+    ('Peter Quill', '2023-08-23', 'Casco', 'Planeta Xandar'), 
+    ('Natasha Romanoff', '2023-08-23', 'Bastón', 'Planeta Xandar'), 
+    ('Rocket Raccoon', '2023-08-23', 'Armas de Rocket', 'Planeta Xandar'),
+    ('Loki', '2023-08-23', 'Cetro de Loki', 'Planeta Xandar'),
+    ('Wade Winston Wilson', '2000-01-05', 'Espadas de Deadpool', 'Knowhere'),
+    ('Loki', '2093-08-03', 'Cetro de Loki', 'Asgard'),
+    ('Blind Al', '2000-01-05', 'Arma de fuego', 'Knowhere'), 
+    ('Rocket Raccoon', '2023-08-20', 'Armas de Rocket', 'Planeta Xandar'),
+    ('Natasha Romanoff', '2023-08-20', 'Bastón', 'Planeta Xandar'),
+    ('Drax el Destructor', '2023-06-01', 'Cuchillos de Drax', 'Nueva York'),
+    ('Norman Osborn', '2023-06-01', 'Glider del Green Goblin', 'Nueva York'), 
+    ('Drax el Destructor', '2023-07-10', 'Cuchillos de Drax', 'Ciudad de México'),
+    ('Drax el Destructor', '2023-08-23', 'Cuchillos de Drax', 'Planeta Xandar'),
+    ('Loki', '2023-06-01', 'Cetro de Loki', 'Puente Bifrost'),
+    ('Norman Osborn', '2023-07-15', 'Glider del Green Goblin', 'Knowhere'),
+    ('Peter Quill', '2023-08-23', 'Casco', 'Ciudad de México'),
+    ('Peter Quill', '2023-06-01', 'Casco','Nueva York'),
+    ('Peter Parker', '2023-08-23', 'Traje de Spider-Man', 'Ciudad de México'),
+    ('Loki', '2023-06-01', 'Cetro de Loki', 'Nueva York'),
+    ('Drax el Destructor', '2004-09-04', 'Cuchillos de Drax', 'Puente Bifrost'),
+    ('Rocket Raccoon', '2004-09-04', 'Armas de Rocket', 'Puente Bifrost');
 
 INSERT INTO "Proyecto Fase 2"."ParticipaPod"
 (
@@ -217,3 +699,35 @@ INSERT INTO "Proyecto Fase 2"."ParticipaPod"
     "CombateFecha",
     "CombateLugar"
 )
+VALUES 
+    ('Korath el Perseguidor','Super Fuerza', '2023-08-23', 'Planeta Xandar'),
+    ('Christina', 'Super Fuerza', '2023-08-23', 'Planeta Xandar'),
+    ('Peter Parker', 'sentido arácnido', '2023-06-01', 'Nueva York'),
+    ('Wade Winston Wilson', 'Regeneración', '2023-06-01', 'Nueva York'),
+    ('Piotr Nikolaievitch Rasputin', 'Cuerpo de acero', '2023-06-01', 'Nueva York'),
+    ('Thor Odinson', 'Super Fuerza', '2023-06-01', 'Nueva York'),
+    ('Drax el Destructor', 'Super Fuerza', '2023-06-01', 'Nueva York'),
+    ('Thanos', 'Super Fuerza', '2023-06-01', 'Nueva York'),
+    ('Groot', 'control de la madera', '2023-07-15', 'Ciudad de México'),
+    ('Ronan el Acusador', 'Super Fuerza', '2023-07-15', 'Ciudad de México'),
+    ('Otto Octavius', 'Resistencia psíquica', '2023-07-15', 'Ciudad de México'),
+    ('Nathan Christopher Summers', 'Telepatía', '2023-07-15', 'Ciudad de México'),
+    ('Eddie Brock', 'Regeneración', '2023-07-15', 'Ciudad de México'),
+    ('Ellie Phimister', 'Control de la energia', '2023-07-15', 'Ciudad de México'),
+    ('Gamora', 'Super Fuerza', '2023-07-15', 'Ciudad de México'),
+    ('Vanessa Carlysle', 'Cambio de apariencia', '2023-08-23', 'Planeta Xandar'),
+    ('Vanessa Carlysle', 'Cambio de apariencia', '2023-07-15', 'Ciudad de México'),
+    ('Nebula', 'Super Fuerza', '2023-08-23', 'Planeta Xandar'),
+    ('Neena Thurman', 'suerte', '2023-08-23', 'Planeta Xandar'),
+    ('Christina','Super Fuerza', '2000-01-05', 'Knowhere'),
+    ('Vanessa Carlysle', 'Cambio de apariencia', '2000-01-05', 'Knowhere'),
+    ('Wade Winston Wilson', 'Regeneración', '2000-01-05', 'Knowhere'),
+    ('Piotr Nikolaievitch Rasputin', 'Cuerpo de acero', '2015-07-03', 'Sokovia'),
+    ('Thor Odinson', 'Super Fuerza', '2093-08-03', 'Asgard'),
+    ('Thor Odinson', 'Super Fuerza', '2023-08-23', 'Planeta Xandar'),
+    ('Nebula', 'Super Fuerza', '2023-07-15', 'Ciudad de México'),
+    ('Groot', 'control de la madera', '2023-08-23', 'Planeta Xandar'),
+    ('Christina','Super Fuerza', '2023-07-15', 'Ciudad de México'),
+    ('Christina','Super Fuerza', '2023-06-01', 'Nueva York'),
+    ('Ronan el Acusador', 'Super Fuerza', '2023-08-23', 'Planeta Xandar'),
+    ('Gamora', 'Super Fuerza', '2023-08-23', 'Planeta Xandar');
