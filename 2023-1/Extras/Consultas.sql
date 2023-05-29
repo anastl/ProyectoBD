@@ -2,13 +2,24 @@
 SELECT "Personaje"."NombreCompleto"
 FROM "Proyecto Fase 2"."Personaje"
 WHERE "Personaje"."NombreCompleto" IN (
+    SELECT "Personaje"
+    FROM "Proyecto Fase 2"."Posee"
+    WHERE "Posee"."FormaObtencion" = 'Artificial'
+) AND "Personaje"."EsCivil" = FALSE AND "Personaje"."NombreCompleto" IN (
+    SELECT "Lider"
+    FROM "Proyecto Fase 2"."Organizacion"
+)
+
+SELECT "Personaje"."NombreCompleto"
+FROM "Proyecto Fase 2"."Personaje"
+WHERE "Personaje"."NombreCompleto" IN (
 	SELECT "Posee"."Personaje"
 	FROM "Proyecto Fase 2"."Posee"
 	WHERE "Posee"."FormaObtencion" = 'Artificial') 
 AND "NombreCompleto" IN (
 	SELECT "Organizacion"."Nombre"
 	FROM "Proyecto Fase 2"."Organizacion"
-	WHERE "Organizacion"."Lider" IS NOT NULL)
+	WHERE "Organizacion"."Lider" IS NOT NULL);
 
 -- Series que han tenido más episodios que el promedio
 SELECT "Serie"."Titulo"
@@ -16,7 +27,7 @@ FROM "Proyecto Fase 2"."Serie"
 WHERE "Serie"."TotalEpi" > (
     SELECT AVG( "Serie"."TotalEpi" )
     FROM "Proyecto Fase 2"."Serie"
-)
+);
 
 -- Los 5 objetos más usados por héroes o villanos
 SELECT "Objeto"."Nombre"
@@ -25,7 +36,7 @@ JOIN "Proyecto Fase 2"."Personaje" ON "Porta"."Nombre" = "Personaje"."NombreComp
 JOIN "Proyecto Fase 2"."Objeto" ON "Porta"."Objeto" = "Objeto"."Nombre"
 WHERE "Personaje"."EsCivil" = false
 GROUP BY "Objeto"."Nombre"
-ORDER BY COUNT(*) DESC
+ORDER BY COUNT("Objeto"."Nombre") DESC
 LIMIT 5;
 
 -- Muestre las 3 locaciones donde se han desarrollado más combates
@@ -47,7 +58,7 @@ ORDER BY "CosteProd" ASC;
 -- Liste toda la información de los poderes que son heredados y que tengan en su nombre la cadena “Super”. Además, dicho poder lo deben tener al menos 2 villanos
 SELECT *
 FROM "Proyecto Fase 2"."Poder"
-WHERE "Poder"."Nombre" IN (
+WHERE "Poder"."Nombre" LIKE '%Super%' AND "Poder"."Nombre" IN (
     SELECT "Nombre"
     FROM "Proyecto Fase 2"."Posee"
     WHERE "Posee"."FormaObtencion" = 'Hereditario' AND "Posee"."Personaje" IN (
@@ -56,16 +67,16 @@ WHERE "Poder"."Nombre" IN (
     )
     GROUP BY "Posee"."Poder"
     HAVING COUNT( "Posee"."Personaje" ) >= 2
-)
+);
 
--- Lista de los 5 poderes más usados en combates y cuantas veces se han usado
-SELECT "Poder", COUNT(*) AS "Count"
+-- Lista de los 3 poderes más usados en combates y cuantas veces se han usado
+SELECT "Poder", COUNT(*) AS "Cantidad"
 FROM "Proyecto Fase 2"."ParticipaPod"
 GROUP BY "Poder"
-ORDER BY "Count" DESC
-LIMIT 5;
+ORDER BY "Cantidad" DESC
+LIMIT 3;
 
--- Listar la nacionalidad de todos los lideres
-SELECT "Tiene".*
-FROM "Proyecto Fase 2"."Tiene" JOIN "Proyecto Fase 2"."Organizacion"
-ON "Tiene"."NombreCompleto" = "Organizacion"."Lider"
+-- Listar los conocidos civiles de todos los lideres
+SELECT "Conoce".*, "Organizacion"."Nombre" AS "Organizacion"
+FROM "Proyecto Fase 2"."Conoce" JOIN "Proyecto Fase 2"."Organizacion"
+ON "Conoce"."Heroe" = "Organizacion"."Lider";
